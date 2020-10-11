@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import ParentComponent from './components/ParentComponent';
+import Counter from './components/Counter';
 // import ComponentA from './components/ComponentA';
 // import ComponentB from './components/ComponentB';
 // import ComponentC from './components/ComponentC';
@@ -29,7 +29,7 @@ function App() {
   return (
 
     <div className="app">
-      <ParentComponent />
+      <Counter />
     </div>
 
     // <div className="App">
