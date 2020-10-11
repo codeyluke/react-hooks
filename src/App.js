@@ -1,9 +1,11 @@
-import React, { useReducer } from 'react';
+import React from 'react';
 import './App.css';
+import ParentComponent from './components/ParentComponent';
 // import ComponentA from './components/ComponentA';
 // import ComponentB from './components/ComponentB';
 // import ComponentC from './components/ComponentC';
-import DataFetchingTwo from './components/DataFetchingTwo'
+
+// import DataFetchingTwo from './components/DataFetchingTwo'
 
 // export const CountContext = React.createContext()
 
@@ -25,9 +27,15 @@ import DataFetchingTwo from './components/DataFetchingTwo'
 function App() {
   // const [count, dispatch] = useReducer(reducer, initialState)
   return (
-    <div className="App">
-      <DataFetchingTwo />
+
+    <div className="app">
+      <ParentComponent />
     </div>
+
+    // <div className="App">
+    //   <DataFetchingTwo />
+    // </div>
+
     // <CountContext.Provider value={{ countState: count, countDispatch: dispatch }}>
     //   <div className="App">
     //     Count - {count}
