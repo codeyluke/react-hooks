@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
-import Counter from './components/Counter';
+import HookTimer from './components/HookTimer';
+// import Counter from './components/Counter';
 // import ComponentA from './components/ComponentA';
 // import ComponentB from './components/ComponentB';
 // import ComponentC from './components/ComponentC';
@@ -29,7 +30,7 @@ function App() {
   return (
 
     <div className="app">
-      <Counter />
+      <HookTimer />
     </div>
 
     // <div className="App">
