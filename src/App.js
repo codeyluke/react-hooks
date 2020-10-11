@@ -1,18 +1,14 @@
 import React from 'react';
 import './App.css';
-import ComponentC from './components/ComponentC';
+import CounterOne from './components/CounterOne';
 
-export const UserContext = React.createContext()
-export const ChannelContext = React.createContext()
+// export const UserContext = React.createContext()
+// export const ChannelContext = React.createContext()
 
 function App() {
   return (
     <div className="App">
-      <UserContext.Provider value={'beast'}>
-        <ChannelContext.Provider value={'beastnation'}>
-          <ComponentC />
-        </ChannelContext.Provider>
-      </UserContext.Provider>
+      <CounterOne />
     </div>
   );
 }
