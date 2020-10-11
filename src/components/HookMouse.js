@@ -9,10 +9,19 @@ function HookMouse() {
     setX(e.clientX)
     setY(e.clientY)
   }
+
+  // Replace lifecyle, the empty array is for componentDidMount() and adding state to the array is for componentDidUpdate()
   useEffect(() => {
     console.log('useEffect called')
     window.addEventListener('mousemove', logMousePosition)
+
+    // ComponentWillUnmount
+    return () => {
+      console.log('component unmounting code')
+      window.removeEventListener('mousemove', logMousePosition)
+    }
   }, [])
+
   return (
     <div>
       Hook X - {x}, Hook Y - {y}
